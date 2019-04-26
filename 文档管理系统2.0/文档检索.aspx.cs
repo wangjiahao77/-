@@ -13,5 +13,10 @@ namespace 文档管理系统2._0
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
