@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace 文档管理系统2._0
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class 下载 : System.Web.UI.Page
     {
-        
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
-            this.Label1.Text = "欢迎" + Request.Cookies["username"].Value;
         }
     }
 }

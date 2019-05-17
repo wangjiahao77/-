@@ -10,45 +10,74 @@
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style1 {
-            height: 126px;
-            width: 974px;
-            margin-left: 245px;
-            margin-top: 48px;
+            height: 35px;
+            width: 1292px;
+            margin-left: 0px;
+            margin-top: 0px;
         }
         .auto-style2 {
-            height: 211px;
-            margin-left: 234px;
+            height: 182px;
+            margin-left: 4px;
             margin-top: 0px;
-            width: 1055px;
+            width: 1285px;
         }
         .auto-style3 {
             font-size: xx-large;
         }
         .auto-style4 {
-            width: 967px;
-            height: 66px;
-            margin-left: 21px;
+            width: 1285px;
+            height: 50px;
+            margin-left: 0px;
             margin-top: 38px;
         }
         .auto-style6 {
-            width: 800px;
+            width: 950px;
             height: 76px;
         }
         .auto-style7 {
             margin-left: 260px;
-            margin-top: 826px;
+            margin-top: 576px;
+        }
+        .auto-style8 {
+            color: #000000;
+        }
+        .auto-style9 {
+            width: 994px;
+            height: 76px;
+        }
+        .auto-style11 {
+            width: 938px;
+            height: 76px;
+        }
+        .auto-style12 {
+            width: 995px;
+            height: 76px;
+        }
+        .auto-style13 {
+            height: 18px;
+            width: 435px;
+            margin-left: 843px;
+        }
+        .auto-style14 {
+            font-size: medium;
         }
         </style>
      <link href="初始页面样式表.css" rel="stylesheet">
 </head>
    
-<body style="height: 1312px; width: 1296px;">
+<body style="height: 873px; width: 1296px;">
     <form id="form1" runat="server">
         <div class="auto-style2">
   
-            <strong><span class="auto-style3"><em>&nbsp;&nbsp;&nbsp;&nbsp; 大作文档管理系统</em></span></strong><table border="1" class="auto-style4">
+            <strong><span class="auto-style3"><em>&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style8">大作文档管理系统</span>
+                <div class="auto-style13">
+           
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style14"></asp:Label>
+           
+            </div>
+            </em></span></strong><table border="1" class="auto-style4">
          <tr>
-             <th class="auto-style6"><a href="初始页面.aspx">用户须知</a></th><th class="auto-style6"><a href="文档检索.aspx">文档检索</a></th><th class="auto-style6"><a href="文档查看.aspx">文档查看</a></th><th class="auto-style6"><a href="用户信息.aspx">修改密码</a></th>
+             <th class="auto-style6"><a href="初始页面.aspx">用户须知</a></th><th class="auto-style11"><a href="文档检索.aspx">文档检索</a></th><th class="auto-style12"><a href="文档查看.aspx">文档管理</a></th><th class="auto-style9"><a href="用户信息.aspx">用户信息</a></th>
              </tr>
          </table>
             </div>

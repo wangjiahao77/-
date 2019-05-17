@@ -18,7 +18,7 @@
             margin-top: 0px;
         }
         .auto-style3 {
-            margin-left: 87px;
+            margin-left: 30px;
         }
         .auto-style4 {
             font-size: large;
@@ -35,18 +35,17 @@
 &nbsp;&nbsp; <strong><span class="auto-style4">欢迎来到大作文档管理系统请登陆</span></strong><br />
             <br />
             <br />
-&nbsp;&nbsp;&nbsp; 用户名：<asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style2"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; 用户名：<asp:TextBox ID="TextBox3" runat="server" CssClass="auto-style2"></asp:TextBox>
             <br />
 &nbsp;<br />
 &nbsp;&nbsp;&nbsp; 密码：&nbsp; 
-            <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style5" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="TextBox4" runat="server" CssClass="auto-style5" TextMode="Password"></asp:TextBox>
             <br />
             <br />
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" CssClass="auto-style3" OnClick="Button1_Click" Text="登陆" />
+            <asp:Button ID="Button1" runat="server" CssClass="auto-style3" OnClick="Button1_Click" Text="登陆" Width="256px" />
 &nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" Height="29px" OnClick="Button2_Click" Text="注册" />
             <br />
 &nbsp;&nbsp;&nbsp;
         </div>

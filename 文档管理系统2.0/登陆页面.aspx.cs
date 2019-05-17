@@ -16,45 +16,11 @@ namespace 文档管理系统2._0
 
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            if (TextBox1.Text == "" || TextBox2.Text == "")
-            {
-                MessageBox.Show("账户或密码为空");
-            }
-            else
-            {
-                SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=用户信息;Integrated Security=True");
-                conn.Open();
-    
-                SqlCommand cmd = new SqlCommand("select * from People where Name='" + TextBox1.Text + "'", conn);
-                SqlDataReader read = cmd.ExecuteReader();
-                read.Read();
-                MessageBox.Show("正在注册");
-                if (read.HasRows)
-                {
-                    MessageBox.Show("注册失败，此用户名已被使用");
-                   
-                }
-                else
-                {
-                    read.Close();
-                   
-                    SqlCommand cdd= new SqlCommand("insert into People(Name,Password) values ('" + TextBox1.Text + "','" + TextBox2.Text + "')", conn);
-                    cdd.ExecuteNonQuery();
-                    conn.Close();
-                    conn.Dispose();
-                    MessageBox.Show("注册成功");
-
-
-                }
-            }
-
-        }
+        
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (TextBox1.Text == "" || TextBox2.Text == "")
+            if (TextBox3.Text == "" || TextBox4.Text == "")
             {
                 MessageBox.Show("账户或密码为空");
             }
@@ -62,13 +28,16 @@ namespace 文档管理系统2._0
             {
                 SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=用户信息;Integrated Security=True");
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("select * from People where Name='" + TextBox1.Text + "' and Password='" + TextBox2.Text+"'" ,  conn);
-                SqlDataReader read = cmd.ExecuteReader();
+                SqlCommand cmd = new SqlCommand("select * from People where Name='" + TextBox3.Text + "' and Password='" + TextBox4.Text+"'" ,  conn);
+                
+              SqlDataReader read = cmd.ExecuteReader();
                 read.Read();
                 MessageBox.Show("正在登陆");
                 if (read.HasRows)
                 {
                     MessageBox.Show("登陆成功");
+                    string uname = this.TextBox3.Text;
+                    Response.Cookies["username"].Value = uname;
                     Response.Redirect("初始页面.aspx");
                 }
                 else
